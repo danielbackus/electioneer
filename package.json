@@ -1,0 +1,23 @@
+{
+  "name": "electioneer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "lint": "npm run lint-api && npm run lint-ui",
+    "lint-api": "npm run --prefix api lint",
+    "lint-ui": "npm run --prefix ui lint",
+    "prettier": "npx prettier . --write",
+    "test": "npm run test-api && npm run test-ui",
+    "test-api": "npm run --prefix api test",
+    "test-ui": "npm run --prefix ui test"
+  },
+  "keywords": [],
+  "author": "Daniel Backus",
+  "license": "GPL",
+  "devDependencies": {
+    "husky": "^4.3.8",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0"
+  }
+}
